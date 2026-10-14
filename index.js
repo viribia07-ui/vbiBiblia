@@ -4,7 +4,7 @@ const express = require('express');
 const app = express()
 
 app.get("/gospel", (req, res)=>{
-    const {passage = "Márk"} = req.query
+    const {passage = "Matthew"} = req.query
     const style = process?.env?.STYLE || "fullyformatted"
     const apiKey = process?.env?.API_KEY || "abc123"
 
